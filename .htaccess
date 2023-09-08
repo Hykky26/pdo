@@ -1,0 +1,12 @@
+RewriteEngine On
+
+RewriteRule ^inscription$ /exo-pdo/controllers/registerController.php
+RewriteRule ^connexion$ /exo-pdo/controllers/loginController.php
+RewriteRule ^deconnexion$ /exo-pdo/controllers/logoutController.php
+
+RewriteRule ^ajouter-un-article$ /exo-pdo/controllers/addPostController.php
+RewriteRule ^liste-des-articles$ /exo-pdo/controllers/postsListController.php
+RewriteRule ^article-([0-9]+)$ /exo-pdo/controllers/readPostController.php?id=$1
+RewriteRule ^profil$ /exo-pdo/controllers/profilController.php
+RewriteRule ^modifier$ /exo-pdo/controllers/modifyProfilController.php
+RewriteRule ^supprimer$ /exo-pdo/controllers/deleteAccountController.php
